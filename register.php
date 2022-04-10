@@ -1,4 +1,4 @@
-<?<php>include'test.php';</php>
+
 <!DOCTYPE html>
 <html>
     <title>
@@ -8,7 +8,7 @@
 
     </head>
     <body>
-        <?<php>include(test.php);</php>
+        
         <div class="form-container">
         
         </div>
