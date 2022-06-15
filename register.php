@@ -1,17 +1,63 @@
+<?php
 
-<!DOCTYPE html>
-<html>
-    <title>
+include 'connection.php';
 
-    </title>
-    <head>
+if(isset($_POST['submit'])){
 
-    </head>
-    <body>
-        
-        <div class="form-container">
-        
-        </div>
-    </body>
-    <h1></h1>
-</html>
+   $name = mysqli_real_escape_string($cnnx, $_POST['name']);
+   $email = mysqli_real_escape_string($cnnx, $_POST['email']);
+   $pass = mysqli_real_escape_string($cnnx, md5($_POST['password']));
+   $cpass = mysqli_real_escape_string($cnnx, md5($_POST['cpassword']));
+   $user_type = $_POST['user_type'];
+
+   $select_users = mysqli_query($cnnx, "SELECT * FROM `users` WHERE email = '$email' AND password = '$pass'") or die('query failed');
+
+   if(mysqli_num_rows($select_users) > 0){
+      $message[] = 'user already exist!';
+   }else{
+      if($pass != $cpass){
+         $message[] = 'confirm password not matched!';
+      }else{
+         mysqli_query($cnnx, "INSERT INTO `users`(name, email, password, user_type) VALUES('$name', '$email', '$cpass', '$user_type')") or die('query failed');
+         $message[] = 'registered successfully!';
+         header('location:login.html');
+      }
+   }
+
+}
+/*
+include 'connection.php';
+// get the post records
+$txtName = $_POST['name'];
+$txtEmail = $_POST['email'];
+$pass =  md5($_POST['password']);
+$cpass =  md5($_POST['cpassword']);
+$user_type = $_POST['user_type'];
+
+// database insert SQL code
+$sql = "INSERT INTO `users` (`name`, `email`, `password`, `user_type`) VALUES ('$txtName', '$txtEmail', '$cpass', '$user_type')";
+
+// insert in database 
+$rs = mysqli_query($cnnx, $sql);
+
+if($rs)
+{
+	echo "Contact Records Inserted";
+}*/
+?>
+<?php
+if(isset($message)){
+   foreach($message as $message){
+      echo '
+      <div class="message">
+         <span>'.$message.'</span>
+         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+      </div>
+      ';
+   }
+}
+?>
+
+
+
+
