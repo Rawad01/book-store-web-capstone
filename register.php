@@ -25,25 +25,7 @@ if(isset($_POST['submit'])){
    }
 
 }
-/*
-include 'connection.php';
-// get the post records
-$txtName = $_POST['name'];
-$txtEmail = $_POST['email'];
-$pass =  md5($_POST['password']);
-$cpass =  md5($_POST['cpassword']);
-$user_type = $_POST['user_type'];
 
-// database insert SQL code
-$sql = "INSERT INTO `users` (`name`, `email`, `password`, `user_type`) VALUES ('$txtName', '$txtEmail', '$cpass', '$user_type')";
-
-// insert in database 
-$rs = mysqli_query($cnnx, $sql);
-
-if($rs)
-{
-	echo "Contact Records Inserted";
-}*/
 ?>
 <?php
 if(isset($message)){
