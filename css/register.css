@@ -1,5 +1,5 @@
 :root{
-   --purple:#8e44ad;
+   --blue:#1999CE;
    --red:#c0392b;
    --orange:#f39c12;
    --black:#333;
@@ -21,7 +21,7 @@
 }
  
  *::selection{
-   background-color: var(--purple);
+   background-color: var(--blue);
    color:var(--white);
 }
  
@@ -35,7 +35,7 @@
 }
  
  *::-webkit-scrollbar-thumb{
-   background-color: var(--purple);
+   background-color: var(--blue);
 }
  
  html{
@@ -87,7 +87,7 @@
 }
  
  .form-container form p a{
-   color: var(--purple);
+   color: var(--blue);
 }
  
  .form-container form p a:hover{
@@ -110,5 +110,27 @@
 
 .white-btn,
 .btn{
-   background-color: var(--purple);
+   background-color: var(--blue);
+}
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .heading h3{
+      font-size: 3.5rem;
+   }
+
+   .title{
+      font-size: 3rem;
+   }
+
+}
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
 }  

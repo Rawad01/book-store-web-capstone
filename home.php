@@ -78,7 +78,7 @@
         <section class="about">
             <div class="flex">
                 <div class="image">
-                    <img src="images/about-img.jpg" alt="">
+                    <img src="images/home2.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>about us</h3>

@@ -1,5 +1,5 @@
 :root{
-  --purple:#8e44ad;
+  --blue:#1999CE;
   --red:#c0392b;
   --orange:#f39c12;
   --black:#333;
@@ -21,7 +21,7 @@
 }
 
 *::selection{
-  background-color: var(--purple);
+  background-color: var(--blue);
   color:var(--white);
 }
 
@@ -35,7 +35,7 @@
 }
 
 *::-webkit-scrollbar-thumb{
-  background-color: var(--purple);
+  background-color: var(--blue);
 }
 
 html{
@@ -59,7 +59,7 @@ html{
  
 .white-btn,
 .btn{
-  background-color: var(--purple);
+  background-color: var(--blue);
 }
 
 .empty{
@@ -73,7 +73,7 @@ html{
 
 .home{
   min-height: 70vh;
-  background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/home-bg.jpg) no-repeat;
+  background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/home1.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -263,7 +263,7 @@ section {
 }
 
 .header .header-1 .flex .share a:hover{
-  color:var(--purple);
+  color:var(--blue);
 }
 
 .header .header-1 .flex p{
@@ -272,7 +272,7 @@ section {
 }
 
 .header .header-1 .flex p a{
-  color:var(--purple);
+  color:var(--blue);
 }
 
 .header .header-1 .flex p a:hover{
@@ -281,7 +281,7 @@ section {
 
 .header .header-2 .flex .logo{
   font-size: 2.5rem;
-  color:var(--purple);
+  color:var(--blue);
 }
 
 .header .header-2 .flex .navbar a{
@@ -291,7 +291,7 @@ section {
 }
 
 .header .header-2 .flex .navbar a:hover{
-  color:var(--purple);
+  color:var(--blue);
   text-decoration: underline;
 }
 
@@ -303,7 +303,7 @@ section {
 }
 
 .header .header-2 .flex .icons > *:hover{
-  color:var(--purple);
+  color:var(--blue);
 }
 
 #menu-btn{
@@ -335,7 +335,7 @@ section {
 }
 
 .header .header-2 .flex .user-box p span{
-  color:var(--purple);
+  color:var(--blue);
 }
 
 .header .header-2 .flex .user-box .delete-btn{
@@ -371,6 +371,28 @@ section {
   }
 
 }
+@media (max-width:450px){
+
+  html{
+     font-size: 50%;
+  }
+
+  .heading h3{
+     font-size: 3.5rem;
+  }
+
+  .title{
+     font-size: 3rem;
+  }
+
+}
+@media (max-width:991px){
+
+  html{
+     font-size: 55%;
+  }
+
+}
 
 .footer{
   background-color: var(--light-bg);
@@ -401,12 +423,12 @@ section {
 
 .footer .box-container .box p i,
 .footer .box-container .box a i{
-  color:var(--purple);
+  color:var(--blue);
   padding-right: .5rem;
 }
 
 .footer .box-container .box a:hover{
-  color:var(--purple);
+  color:var(--blue);
   text-decoration: underline;
 }
 
@@ -420,6 +442,6 @@ section {
 }
 
 .footer .credit span{
-  color:var(--purple);
+  color:var(--blue);
 }
 

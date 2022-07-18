@@ -16,17 +16,17 @@
       </div>
       <div class="box">
          <h3>contact info</h3>
-         <p> <i class="fas fa-phone"></i> +961 70/973158 </p>
-         <p> <i class="fas fa-phone"></i> 05/401247 </p>
-         <p> <i class="fas fa-envelope"></i> Rawad.rassamny@gmail.com </p>
-         <p> <i class="fas fa-map-marker-alt"></i> Beirut, Lebanon </p>
+         <p> <i class="my phone"></i> +961 70/973158 </p>
+         <p> <i class="my phone"></i> 05/401247 </p>
+         <p> <i class="my email"></i> Rawad.rassamny@gmail.com </p>
+         <p> <i class="my location"></i> Beirut, Lebanon </p>
       </div>
       <div class="box">
          <h3>follow us</h3>
-         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+         <a href="https://www.facebook.com/rawad.rassamny"> <i class="my facebook"></i> facebook </a>
+         <a href="https://twitter.com/RawadRassamny?t=McUbRIijcG9f5CUcrECGVQ&s=09"> <i class="my twitter"></i> twitter </a>
+         <a href="https://www.instagram.com/rawadrassamny/?hl=en"> <i class="my instagram"></i> instagram </a>
+         <a href="https://www.linkedin.com/in/rawad-rassamny-81b08520b"> <i class="my linkedin"></i> linkedin </a>
       </div>
    </div>
    <p class="credit"> &copy; copyright  @ <?php echo date('Y'); ?> by <span>mr. Rawad rassamny</span> </p>
