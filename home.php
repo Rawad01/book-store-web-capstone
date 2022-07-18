@@ -1,7 +1,6 @@
 <?php
-    include('connection.php');
+    include 'connection.php';
     session_start();
-
     $user_id = $_SESSION['user_id'];
 
     if(!isset($user_id)){
@@ -36,6 +35,9 @@
         <title>Home</title>
     </head>
     <body>
+        <?php 
+            include 'header.php';
+        ?>
         <section class="home">
             <div class="content">
                 <h3>Hand Picked Book to your door.</h3>
@@ -73,6 +75,28 @@
                 <a href="shop.php" class="option-btn">load more</a>
             </div>
         </section>
+        <section class="about">
+            <div class="flex">
+                <div class="image">
+                    <img src="images/about-img.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>about us</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
+                    <a href="about.php" class="btn">read more</a>
+                </div>
+            </div>
+        </section>
+        <section class="home-contact">
+            <div class="content">
+                <h3>have any questions?</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque exercitationem repellendus, amet ullam voluptatibus?</p>
+                <a href="contact.php" class="white-btn">contact us</a>
+            </div>
+        </section>
+        <?php 
+            include 'footer.php'; 
+        ?>
         <script src="js/script.js"></script>
     </body>
 </html>
